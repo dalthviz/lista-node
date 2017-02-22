@@ -1,0 +1,40 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.starter_template {
+    text-align: center;
+}
+
+.row {
+    display: inline-block;
+}
+
+.tweet {
+  width: 300px;
+  margin: 20px;
+  border: #ddd solid 1px;
+  display: inline-block;
+}
+
+.tweet_profile_pic {
+  width: 20%;
+  float: left;
+  margin: 10px;
+  display: block;
+}
+
+.tweet_text {
+  width: 70%;
+  margin: 1px;
+  float: left;
+}
+
+.tweet_name {
+  clear: both;
+}

@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Project name
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+        // /.nav-collapse
+    .container
+      .starter-template
+        h1 #{title}
+        p.lead
+          | Los tweets con lectura desde un .json en Node.js
+          br
+    // /.container
+    .container-fluid
+      .row
+        // tweets
+        .col-md-1
+          // filling
+        .col-md-11
+          each tweet in tweets
+            .tweet.well
+              img.tweet_profile_pic(src=tweet.user.profile_image_url_https, alt='Profile pic')
+              .tweet_text
+                | #{tweet.text}
+              .tweet_name
+                | #{tweet.user.name}
+              .tweet_date
+                | #{tweet.created_at}
+        
+
+  script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
