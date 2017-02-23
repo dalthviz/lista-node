@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 	};
 
   var options = {
-    url     : 'http://localhost:3000/data',
+    url     : 'http://localhost:3000/data/mongo',
     method  : 'GET',
     headers : headers
 	};

@@ -23,6 +23,7 @@ a {
 }
 
 .tweet_profile_pic {
+  border-radius: 100%;
   width: 20%;
   float: left;
   margin: 10px;
